@@ -1,0 +1,75 @@
+[
+    {
+      "id": 0,
+      "destino":"Campo Grande",
+      "coordenadas":[-22.903460000378693, -43.567130000449126],
+      "ligacoes":["Manguariba","Castelo","Barra da Tijuca","Candelária","Marechal Hermes",
+              "Coelho Neto","Cascadura","Corcundinha","Escola Amazonas","Pedra de Guaratiba",
+              "Cidade Universitária","Terminal Sulacap"]
+    },
+    {
+      "id": 1,
+      "destino":"Manguariba",
+      "coordenadas":[-22.901470000340204, -43.560739999851059],
+      "ligacoes":["Campo Grande","Castelo","Barra da Tijuca","Candelária","Marechal Hermes",
+              "Coelho Neto","Cascadura","Corcundinha","Escola Amazonas","Pedra de Guaratiba",
+              "Cidade Universitária","Terminal Sulacap"]
+    },
+
+    {
+      "id": 2,
+      "destino":"Coelho Neto",
+      "coordenadas":[-22.832390, -43.349657],
+      "ligacoes":["Conjunto dos Palmares","Santa Cruz","Cesarão","Campo Grande","Mendanha", "Vila Kennedy"]
+    },
+    {
+      "id": 3,
+      "destino":"Cascadura",
+      "coordenadas":[-22.881529999909514,-43.325199999880013 ],
+      "ligacoes":["Coelho Neto","Pavuna","Rio Comprido","Amarelinho","Irajá"]
+    },
+    {
+      "id": 4,
+      "destino":"Barra da Tijuca",
+      "coordenadas":[-22.989543938347182, -43.36628000504688],
+      "ligacoes":["Tanque","Campo Grande","Santa Cruz","Bangu"]
+    },
+    {
+      "id": 5,
+      "destino":"Castelo",
+      "coordenadas":[-22.906411480014206, -43.17574598164847],
+      "ligacoes":["Usina","Rodoviária","Jardim América","Lins","Bananal","Bancários",
+      "Água Santa","Ribeira","Rocha Miranda", "Honório Gurgel"]
+    },
+    {
+      "id": 6,
+      "destino":"Candelária",
+      "coordenadas":[-22.906411480014206, -43.17574598164847],
+      "ligacoes":["Rocha Miranda", "Madureira","Jardim América","Ribeira", "Olaria","Bananal", "Rodoviária"]
+    },
+    {
+      "id": 7,
+      "destino":"Marechal Hermes",
+      "coordenadas":[-22.862964470597383, -43.37229487701288],
+      "ligacoes":["Bonsucesso", "Castelo","São Cristóvão","Praça Seca"]
+    },
+    {
+      "id": 8,
+      "destino":"Coelho Neto",
+      "coordenadas":[-22.832248836476516, -43.349760956551755],
+      "ligacoes":["Cascadura", "Santa Cruz","Conjunto dos Palmares","Campo Grande","Vila Kennedy","Mendanha"]
+    },
+    {
+      "id": 9,
+      "destino":"Corcundinha",
+      "coordenadas":[-22.832248836476516, -43.349760956551755],
+      "ligacoes":["Campo Grande","Escola Amazonas"]
+    },
+    {
+      "id": 10,
+      "destino":"Escola Amazonas",
+      "coordenadas":[-22.932800059127427, -43.37675999545221],
+      "ligacoes":["Campo Grande","Corcundinha"]
+    }
+
+]

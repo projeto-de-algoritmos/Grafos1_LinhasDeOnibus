@@ -1,0 +1,23 @@
+{
+    "A": {
+      "origem": "A",
+      "adjacencias": ["B", "C", "D"]
+    },
+    "B": {
+      "origem": "B",
+      "adjacencias": ["A", "C"]
+    },
+    "C": {
+      "origem": "C",
+      "adjacencias": ["A", "B", "D"]
+    },
+    "D": {
+      "origem": "D",
+      "adjacencias": ["A", "C", "E"]
+    },
+    "E": {
+      "origem": "E",
+      "adjacencias": ["D"]
+    }
+  }
+  
