@@ -12,18 +12,22 @@
 Descreva os objetivos do seu projeto e como ele funciona. 
 
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
+
 
 ## Instalação 
-**Linguagem**: xxxxxx<br>
-**Framework**: (caso exista)<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
+**Linguagem**: TypeScript<br>
+**Framework**: React.js<br>
 
 ## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
+Para rodar o projeto você deve:
+- Clonar o repositório
+- Navegue até a pasta linha-onibus
+- execute os comandos
+  - npm install
+  - npm start
 
 ## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
+Observação: nem todas as rotas do Rio de Janeiro estão disponíveis nessa aplicação.
 
 
 
