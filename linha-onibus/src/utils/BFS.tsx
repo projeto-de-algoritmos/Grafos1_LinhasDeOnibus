@@ -1,45 +1,44 @@
-export interface Grafo {
-    [key: string]: {
-      origem: string;
-      adjs: string[];
-    };
-  }
-  
-  //const cont = fs.readFileSync('../sources/grafo.json', 'utf-8');
-  //const grafo: Grafo = JSON.parse(cont);
-  // Exemplo de uso:
-  //console.log(BFS(grafo, "A", "E"))
-  
-  
-// Defina a função BFS para encontrar o menor caminho
-export function BFS(g: Grafo, origem: string, destino: string): string[] {
-  const visitados: string[] = [];
-  const fila: string[][] = [[origem]];
-  let caminho: string[];
-  const pai: {[key: string]: string} = {};
-  
-  pai[origem] = '';
-  while (fila.length) {
-    caminho = fila.shift()!;
-    const noAtual = caminho[caminho.length - 1];
-
-    if (noAtual === destino) {
-      return caminho;
-    }
-    if (g[noAtual].adjs) {
-      
-      if (!visitados.includes(noAtual)) {
-        visitados.push(noAtual);
-        console.log(visitados)
-        for (const adj of g[noAtual].adjs) {
-          fila.push([...caminho, adj]);
-
-        }
-      }
-    }
-  }
-
-  return [];
+interface Vertice {
+  origem: string;
+  adjacencias: string[];
 }
-  
-  
+
+export interface Grafo {
+  [key: string]: Vertice;
+}
+
+export function BFS(g: Grafo, origem: string, destino: string) {
+  const visitados: {[key: string]: boolean} = {}; 
+  const fila: string[] = [origem];
+  const pai: {[key: string]: string} = {}; 
+  let noAtual: string;
+
+  visitados[origem] = true;
+  pai[origem] = ''; 
+
+  while (fila.length) {
+    noAtual = fila.shift()!;
+    if (noAtual === destino) {
+      console.log('Encontrado! O caminho é:');
+      let caminho: string[] = [destino];
+      let no: string = pai[destino];
+      while (no) { 
+        caminho.unshift(no);
+        no = pai[no];
+      }
+      console.log(caminho.join(' -> '));
+      console.log(caminho);
+      return caminho;
+
+    }
+    g[noAtual].adjacencias.forEach((adj: string) => {
+      if (!visitados[adj]) {
+        visitados[adj] = true;
+        pai[adj] = noAtual; 
+        fila.push(adj);
+      }
+    });
+  }
+  console.log('Não encontrado!');
+  return;
+}
