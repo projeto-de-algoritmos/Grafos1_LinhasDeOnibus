@@ -12,7 +12,9 @@
 Descreva os objetivos do seu projeto e como ele funciona. 
 
 ## Screenshots
-
+![Screenshot 1](./f1.png)
+![Screenshot 2](./f2.png)
+![Screenshot 3](./f3.png)
 
 ## Instalação 
 **Linguagem**: TypeScript<br>
