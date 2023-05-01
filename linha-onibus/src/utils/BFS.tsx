@@ -11,22 +11,35 @@ export interface Grafo {
   //console.log(BFS(grafo, "A", "E"))
   
   
-  export function BFS(g: Grafo, origem: string, destino: string) {
-    const visitados: string[] = [];
-    const fila: string[] = [origem];
-    let noAtual: string;
+// Defina a função BFS para encontrar o menor caminho
+export function BFS(g: Grafo, origem: string, destino: string): string[] {
+  const visitados: string[] = [];
+  const fila: string[][] = [[origem]];
+  let caminho: string[];
+  const pai: {[key: string]: string} = {};
   
-    while (fila.length) {
-      noAtual = fila.shift()!;
-      if (noAtual === destino) {
-        console.log(Encontrado! A rota é ${g[noAtual].origem} - ${noAtual});
-        return;
-      }
+  pai[origem] = '';
+  while (fila.length) {
+    caminho = fila.shift()!;
+    const noAtual = caminho[caminho.length - 1];
+
+    if (noAtual === destino) {
+      return caminho;
+    }
+    if (g[noAtual].adjs) {
+      
       if (!visitados.includes(noAtual)) {
         visitados.push(noAtual);
-        fila.push(...g[noAtual].adjs);
+        console.log(visitados)
+        for (const adj of g[noAtual].adjs) {
+          fila.push([...caminho, adj]);
+
+        }
       }
     }
-    console.log('Não encontrado!');
   }
+
+  return [];
+}
+  
   

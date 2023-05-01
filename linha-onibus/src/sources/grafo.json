@@ -1,23 +1,7 @@
 {
-    "A": {
-      "origem": "A",
-      "adjacencias": ["B", "C", "D"]
-    },
-    "B": {
-      "origem": "B",
-      "adjacencias": ["A", "C"]
-    },
-    "C": {
-      "origem": "C",
-      "adjacencias": ["A", "B", "D"]
-    },
-    "D": {
-      "origem": "D",
-      "adjacencias": ["A", "C", "E"]
-    },
-    "E": {
-      "origem": "E",
-      "adjacencias": ["D"]
-    }
-  }
-  
+  "A": {"origem": "A", "adjacencias": ["B", "C"]},
+  "B": {"origem": "B", "adjacencias": ["A", "D", "E"]},
+  "C": {"origem": "C", "adjacencias": ["A"]},
+  "D": {"origem": "D", "adjacencias": ["B"]},
+  "E": {"origem": "E", "adjacencias": ["B"]}
+}
