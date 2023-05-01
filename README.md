@@ -9,7 +9,7 @@
 | 20/0026551  |  Rafael Xavier Canabrava |
 
 ## Sobre 
-Descreva os objetivos do seu projeto e como ele funciona. 
+Este projeto tem como objetico mostrar as melhores rotas de ônibus na cidade do Rio de Janeiro dada uma origem e um destino com base no algoritmo de busga em largura.
 
 ## Screenshots
 ![Screenshot 1](./f1.png)
