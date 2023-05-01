@@ -9,7 +9,7 @@
 | 20/0026551  |  Rafael Xavier Canabrava |
 
 ## Sobre 
-Este projeto tem como objetico mostrar as melhores rotas de ônibus na cidade do Rio de Janeiro dada uma origem e um destino com base no algoritmo de busga em largura.
+Este projeto tem como objetico mostrar as melhores rotas de ônibus na cidade do Rio de Janeiro dada uma origem e um destino com base no algoritmo de busca em largura.
 
 ## Screenshots
 ![Screenshot 1](./f1.png)
@@ -24,9 +24,12 @@ Este projeto tem como objetico mostrar as melhores rotas de ônibus na cidade do
 Para rodar o projeto você deve:
 - Clonar o repositório
 - Navegue até a pasta linha-onibus
-- execute os comandos
-  - npm install
-  - npm start
+- Execute os comandos:
+ ```
+  npm install
+  npm start
+```
+- Em seu navegador, vá até [localhost:3000](http://localhost:3000)
 
 ## Outros 
 Observação: nem todas as rotas do Rio de Janeiro estão disponíveis nessa aplicação.
