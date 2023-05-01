@@ -43,6 +43,7 @@
     ]
   },
   "devDependencies": {
+    "@types/node": "^18.16.3",
     "@iconify/react": "^4.1.0"
   }
 }
