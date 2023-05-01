@@ -9,7 +9,7 @@
 | 20/0026551  |  Rafael Xavier Canabrava |
 
 ## Sobre 
-Este projeto tem como objetico mostrar as melhores rotas de ônibus na cidade do Rio de Janeiro dada uma origem e um destino com base no algoritmo de busca em largura.
+Este projeto tem como objetivo mostrar as melhores rotas de ônibus na cidade do Rio de Janeiro dada uma origem e um destino com base no algoritmo de busca em largura.
 
 ## Screenshots
 ![Screenshot 1](./f1.png)
